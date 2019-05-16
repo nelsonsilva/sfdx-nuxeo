@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="helloNuxeo">
+    <apiVersion>45.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Hello Nuxeo</masterLabel>
+    <description>Sample Nuxeo LWC.</description>
+    <targets>
+      <target>lightning__AppPage</target>
+      <target>lightning__HomePage</target>
+    </targets>
+    <targetConfigs>
+      <targetConfig targets="lightning__HomePage,lightning__AppPage">
+          <property name="username" type="String" label="Username" placeholder="Administrator" description="Enter the username."/>
+          <property name="password" type="String" label="Password" description="Enter the password."/>
+          <property name="baseURL" type="String" label="URL" description="Enter the URL."/>
+          <property name="path" type="String" label="Root path" description="Root document path."/>
+      </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

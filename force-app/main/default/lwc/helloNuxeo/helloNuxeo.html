@@ -1,0 +1,15 @@
+<template>
+  <lightning-card title="Hello Nuxeo" icon-name="custom:custom14">
+    <div class="slds-card__body slds-card__body_inner">
+      <ul class="slds-m-top_x-small">
+          <template for:each={documents} for:item="document">
+              <li key={document.uid}>
+                  <div class="slds-p-vertical_xx-small" >
+                      <p>{document.title}</p>
+                  </div>
+              </li>
+          </template>
+      </ul>
+    </div>
+</lightning-card>
+</template>
